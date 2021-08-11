@@ -20,6 +20,11 @@ class List extends React.Component {
                 <div className={styles.description}>
                     {this.props.children}
                 </div>
+                {/*<div className={styles.columns}>
+                    <Column colTitle={'ZZ Top'}/>
+                    <Column colTitle={'MC Hammer'}/>
+                    <Column colTitle={'Simon Webbe'}/>
+        </div>*/}
             </section>
         )
     }
