@@ -1,8 +1,13 @@
 import React from 'react';
-import styles from './List.scss';
+import styles from './Column.scss';
 import Column from '../Column/Column.js';
 
 class Column extends React.Component {
+    static propTypes = {
+        title: PropTypes.node.isRequired,
+        children: PropTypes.node,
+        colTitle: PropTypes.node,
+    }
     render() {
         return (
             <section className={styles.component}>
