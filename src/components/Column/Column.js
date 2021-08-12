@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './Column.scss';
-import Column from '../Column/Column.js';
+import PropTypes from 'prop-types';
 
 class Column extends React.Component {
     static propTypes = {
@@ -11,7 +11,7 @@ class Column extends React.Component {
     render() {
         return (
             <section className={styles.component}>
-                <h3 className={styles.title}>Ciekawe co z tego będzie!</h3>
+                <h3 className={styles.title}>{this.props.colTitle}</h3>
             </section>
         )
     }
