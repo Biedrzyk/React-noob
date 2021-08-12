@@ -4,8 +4,12 @@ import Hero from '../Hero/Hero.js';
 import PropTypes from 'prop-types';
 import Column from '../Column/Column';
 import {settings} from '../../data/dataStore';
+import ReactHtmlParser from 'react-html-parser';
 
 class List extends React.Component {
+    state = {
+        columns: this.props.columns || [],
+      }
     static propTypes = {
         title: PropTypes.node.isRequired,
         description: PropTypes.node,
@@ -21,7 +25,7 @@ class List extends React.Component {
                 <Hero titleText={this.props.title} image={this.props.image}>
                 </Hero>
                 <div className={styles.description}>
-                    {this.props.description}
+                    {ReactHtmlParser(this.props.description)}
                 </div>
                 <div className={styles.columns}>
                     <Column colTitle={'ZZ Top'} />
