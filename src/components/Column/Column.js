@@ -15,6 +15,7 @@ class Column extends React.Component {
     title: PropTypes.string,
     cards: PropTypes.array,
     icon: PropTypes.node,
+    addCard: PropTypes.func,
   }
 
   static defaultProps = {
