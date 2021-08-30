@@ -46,13 +46,6 @@ class Column extends React.Component {
           </span>
           {title}
         </h3>
-        {/*
-                    <h3 className={styles.title}>
-            <span className={styles.icon}>
-              <Icon name={this.props.icon} /> // this is the primary state of app
-            </span>
-            {this.props.title}
-          </h3>*/}
         <div className={styles.cards}>
           {cards.map(cardData => (
             <Card key={cardData.id} {...cardData} />
