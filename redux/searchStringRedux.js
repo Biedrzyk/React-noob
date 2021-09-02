@@ -1,5 +1,5 @@
 // selectors
-
+export const getSearchString = ({searchString}) => searchString;
 // action name creator
 
 // actions types
