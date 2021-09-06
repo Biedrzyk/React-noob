@@ -6,16 +6,16 @@ import Container from '../Container/Container';
 
 class Header extends React.Component {
   render() {
-    return(
+    return (
       <header className={styles.component}>
         <Container>
           <div className={styles.wrapper}>
             <Link to='/' className={styles.logo}>
-              <Icon name='cat' />
+              <Icon name='hotdog' />
             </Link>
             <nav>
-              <NavLink exact to='/'>Home</NavLink>
-              <NavLink exact to='/info'>Info</NavLink>
+              <NavLink exact to='/' activeClassName='active'>Home</NavLink>
+              <NavLink exact to='/info' activeClassName='active'>Info</NavLink>
             </nav>
           </div>
         </Container>
