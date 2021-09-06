@@ -72,6 +72,18 @@ export const listData = {
   ],
 };
 
+export const faqData = {
+  title: 'FAQ',
+  image: 'http://uploads.kodilla.com/bootcamp/fer/11.react/space.png',
+  text:  'Proin vitae ullamcorper dolor, eu faucibus turpis. Pellentesque a auctor lectus. Phasellus dui metus, suscipit sit amet feugiat sit amet, dignissim in diam. Sed et ornare ante, finibus varius justo. Quisque ac tellus malesuada, pellentesque neque ut, varius nisi. Nam eget diam nisl. Cras est lectus, cursus sed lacus eu, faucibus ullamcorper mauris. Fusce maximus eros mi, ut fringilla felis luctus sit amet. Praesent sit amet commodo nisi. Mauris at justo imperdiet, mollis nisi vitae, mattis felis. Nunc cursus posuere lacus sagittis egestas.',
+};
+
+export const infoData = {
+  title: 'Info',
+  image: 'http://uploads.kodilla.com/bootcamp/fer/11.react/space.png',
+  text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+};
+
 const lists = [
   {
     id: 'list-1',
