@@ -17,7 +17,7 @@ class SearchResults extends React.Component {
       <section className={styles.component}>
         <h3 className={styles.title}>
           <span className={styles.icon}>
-            <Icon name='hotdog' />
+            <Icon name='cat' />
           </span>
           Some Title
         </h3>

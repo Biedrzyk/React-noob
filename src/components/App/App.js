@@ -7,7 +7,7 @@ import FAQ from '../FAQ/FAQ';
 import {AnimatedSwitch} from 'react-router-transition';
 import styles from './App.scss';
 import List from '../List/ListContainer';
-import SearchResults from '../SearchResults/SearchResultsContainer';
+import SearchResults from '../SearchResults/SearchContainer';
 
 const App = () => (
   <BrowserRouter>
