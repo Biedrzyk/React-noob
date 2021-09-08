@@ -4,7 +4,7 @@ import Button from '../Button/Button';
 import PropTypes from 'prop-types';
 import { settings } from '../../data/dataStore';
 import Icon from '../Icon/Icon';
-import Container from '../Container/Container';
+//import Container from '../Container/Container';
 
 class Search extends React.Component {
   static propTypes = {
@@ -44,7 +44,7 @@ class Search extends React.Component {
     const { text, countVisible, countAll } = this.props;
     const { value } = this.state;
     const { icon } = settings.search;
-    return (<Container>
+    return (
       <div className={styles.component}>
         <input
           type='text'
@@ -59,7 +59,6 @@ class Search extends React.Component {
           {countVisible == countAll ? '' : `${countVisible} / ${countAll}`}
         </div>
       </div>
-    </Container>
     );
   }
 }
