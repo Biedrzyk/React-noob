@@ -3,8 +3,15 @@ import styles from './Search.scss';
 import Button from '../Button/Button';
 import { settings } from '../../data/dataStore';
 import Icon from '../Icon/Icon';
+import {withRouter} from 'react-router';
+//import { checkPropTypes } from 'prop-types';
+import PropTypes from 'prop-types';
 
 class Search extends React.Component {
+
+  static propTypes = {
+    history: PropTypes.node,
+  }
 
   state = {
     value: '',
@@ -19,6 +26,7 @@ class Search extends React.Component {
   }
 
   handleOK() {
+    this.props.history.push(`/search/${this.state.value}`);
   }
 
 
@@ -40,4 +48,4 @@ class Search extends React.Component {
   }
 }
 
-export default Search;
+export default withRouter(Search);
